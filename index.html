@@ -7,7 +7,22 @@
 </head>
 <body>
     <div id="app"></div>
-    <script type="text/javascript"></script>
-    
+    <script type="text/javascript">
+        //Seleccionamos el elemento div con el id app
+        const app = document.getElementById('app');
+
+        //Creamos un nuevo H1
+        const header = document.createElement('h1');
+
+        //Creamos un nuevo text node para el H1
+        const text = 'Develop. Preview. Ship.';
+        const headerContent = document.createTextNode(text);
+
+        //Adjuntamos el text al H1
+        header.appendChild(headerContent);
+
+        //Insertamos el H1 adentro del div
+        app.appendChild(header);
+    </script>
 </body>
 </html>
